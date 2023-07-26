@@ -1,3 +1,4 @@
+/* eslint-disable */
 import styles from './Navigation.module.scss'
 import logo from './images/header-logo.svg'
 export const Navigation = () => {

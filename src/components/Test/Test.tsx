@@ -1,3 +1,4 @@
+/* eslint-disable */
 import styles from './Test.module.scss'
 import { Button, Input, Modal, Upload } from '@arco-design/web-react'
 import { useState } from 'react'
