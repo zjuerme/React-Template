@@ -1,5 +1,16 @@
 # Getting Started with Create React App
 
+
+### Attention!
+
+```shell
+# 配环境多用yarn，而npm不要用，这个包会不兼容。然后启动用npm start  打包用yarn build
+# yarn build 失败，报错   每个ts，js都加上下面这个在开头
+/* eslint-disable */
+```
+
+
+
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Available Scripts
