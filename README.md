@@ -91,3 +91,30 @@ https://echarts.apache.org
 ### 可能出现的问题
 
 该框架建议`yarn`和`npm`混用
+
+# 关于把网页挂载到服务器
+
+我更推荐挂在github page上(✔)
+
+或者可以用ngnix
+
+```bash
+# 启用和关闭这些服务
+systemctl stop nginx
+systemctl start nginx
+```
+
+后端运行python flask程序进行收发
+
+```shell
+export FLASK_APP=/usr/pythoncode/backend.py  #在任意目录下都可
+flask run
+flask run --host=0.0.0.0 #这将使您的服务器在外部 IP 上可用。但请注意，这样做可能会暴露您的服务器面临安全风险。在生产环境中，请确保使用适当的安全设置和防火墙配置。
+nohup flask run --host=0.0.0.0 &  #一直运行,用上秒的sudo kill来杀死这个进程
+```
+
+购买的服务器建议用centOS(建议使用这个)
+
+[React项目部署在阿里云服务器ECS - 知乎 (zhihu.com)](https://zhuanlan.zhihu.com/p/107285294)
+
+[前端React项目部署到阿里云-linux 服务器 - 小宁526 - 博客园 (cnblogs.com)](https://www.cnblogs.com/ningwuyu/p/12455738.html)
